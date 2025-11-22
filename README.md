@@ -1,6 +1,5 @@
 # Distributed Password Cracker
 MPCS 52040 — Distributed Systems  
-Spec reference: :contentReference[oaicite:0]{index=0}
 
 ## Overview
 A distributed brute-force MD5 password-cracking system built with Flask. Multiple service instances run in parallel, each searching a portion of the password space. A Python client coordinates chunking, concurrency, retries, and early termination.
@@ -12,7 +11,7 @@ A distributed brute-force MD5 password-cracking system built with Flask. Multipl
 - `report.md` — Documentation for fault tolerance, caching, and performance.
 
 ## Running Services
-flask --app cracker_service --port <port> run
+flask --app cracker_service run --port <port>
 
 shell
 Code kopieren
